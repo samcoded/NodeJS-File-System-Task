@@ -8,7 +8,7 @@ http.get(url, (res) => {
     content += data;
   });
   res.on("end", () => {
-    fs.writeFile("result/post.json", content, (err) => {
+    fs.writeFile("result/posts.json", content, (err) => {
       if (err) throw err;
       console.log("file successfully saved");
     });
